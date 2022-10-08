@@ -1,346 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BookStore</title>
-    <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <section id="landing">
-      <nav>
-        <div class="nav_container">
-          <img class="logo" src="./assets/logo.jpg" alt="logo" />
-          <ul class="nav_links">
-            <li><a href="#" class="nav_link">Home</a></li>
-            <li><a href="#" class="nav_link">Contact</a></li>
-            <li><a href="/books.html" class="nav_link nav_link-primary">Books</a></li>
-          </ul>
-          <button class="btn_menu" onclick="openMenu()">
-            <i class="fas fa-bars"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookStore</title>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <section id="landing">
+    <nav>
+      <div class="nav_container">
+        <img class="logo" src="./assets/logo.jpg" alt="logo" />
+        <ul class="nav_links">
+          <li><a href="#" class="nav_link">Home</a></li>
+          <li><a href="#" class="nav_link">Contact</a></li>
+          <li><a href="books.html" class="nav_link nav_link-primary">Books</a></li>
+        </ul>
+        <button class="btn_menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu_backdrop">
+          <button class="btn_menu btn_menu_close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
           </button>
-          <div class="menu_backdrop">
-            <button class="btn_menu btn_menu_close" onclick="closeMenu()">
-              <i class="fas fa-times"></i>
-            </button>
-            <ul class="menu_links">
-              <li class="menu_list">
-                <a href="#" class="menu_link" onclick="closeMenu()">Home</a>
-              </li>
-              <li class="menu_list">
-                <a href="#features" class="menu_link">Books</a>
-              </li>
-              <li class="menu_list">
-                <a href="#" class="menu_link no-Cursor" onclick="closeMenu()"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
+          <ul class="menu_links">
+            <li class="menu_list">
+              <a href="#" class="menu_link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu_list">
+              <a href="#features" class="menu_link">Books</a>
+            </li>
+            <li class="menu_list">
+              <a href="#" class="menu_link no-Cursor" onclick="closeMenu()">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-
-      <header>
-        <div class="header_container">
-          <div class="header_description">
-            <h1>Karnataka's most awarded online book platform</h1>
-            <h2>
-              Find your dream book with <span class="purple">Sankathana</span>
-            </h2>
-            <a href="#features">
-              <button class="btn">Browse Books</button>
-            </a>
-          </div>
-          <figure class="header_img_wrapper">
-            <img src="./assets/Undraw_Book.svg" alt="" />
-          </figure>
-        </div>
-      </header>
-    </section>
-    <img class="wave" src="./assets/waveup.svg" alt="wave" />
-    <main>
-      <section id="highlights">
-        <div class="container">
-          <div class="row">
-            <h2 class="section_title">
-              Why choose <span class="purple">Sankathana</span>
-            </h2>
-            <div class="highlight_wrapper">
-              <div class="highlight">
-                <div class="highlight_img">
-                  <i class="fas fa-bolt"></i>
-                </div>
-                <h3 class="highlight_subtitle">Easy and Quick</h3>
-                <p class="highlight_para">
-                  Get access to the book you purchased online instantly
-                </p>
-              </div>
-              <div class="highlight">
-                <div class="highlight_img">
-                  <i class="fas fa-book-open"></i>
-                </div>
-                <h3 class="highlight_subtitle">1000+ Books</h3>
-                <p class="highlight_para">
-                  Sankathana has books in all your favorites categaries.
-                </p>
-              </div>
-              <div class="highlight">
-                <div class="highlight_img">
-                  <i class="fas fa-tags"></i>
-                </div>
-                <h3 class="highlight_subtitle">Afffordable</h3>
-                <p class="highlight_para">
-                  Get your hands on popular books for a lowest price
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <img class="wave" src="./assets/wavedown.svg" alt="wave" />
-
-      <section id="features">
-        <div class="container">
-          <div class="row">
-            <h2>Features <span class="purple">Books</span></h2>
-            <div class="books">
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book2.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book3.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book4.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book5.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="recent">
-        <div class="container">
-          <div class="row">
-            <h2>Latest <span class="purple">Books</span></h2>
-            <div class="books">
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book2.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book3.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book4.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book5.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book2.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book3.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book4.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-              <div class="book">
-                <figure class="book_img_wrapper">
-                  <img class="book_img" src="./assets/book5.jpg" alt="" />
-                </figure>
-                <div class="book_title">Book title</div>
-                <div class="book_ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book_price">
-                  <span class="book_price_normal">Rs.500</span>Rs. 400
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="Explore">
-        <div class="container">
-          <div class="row row_column">
-            <h2>Explore more <span class="purple">Books</span></h2>
-            <a href="#features">
-              <button class="btn">Browse Books</button>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="row row_column">
-        <a href="#">
-          <figure class="footer_logo">
-            <img src="./assets/footerlogo.jpg" class="footer_logo_img" alt="" />
-          </figure>
-        </a>
-        <div class="footer_list">
-          <a href="" class="footer_link">Home</a>
-          <a href="" class="footer_link no-Cursor">About</a>
-          <a href="" class="footer_link">Books</a>
-          <a href="" class="footer_link no-Cursor">Contact</a>
-        </div>
-        <div class="footer_copyright">Copyright &copy; 2022 Library</div>
       </div>
-    </footer>
-  </body>
+    </nav>
+
+    <header>
+      <div class="header_container">
+        <div class="header_description">
+          <h1>Karnataka's most awarded online book platform</h1>
+          <h2>
+            Find your dream book with <span class="purple">Sankathana</span>
+          </h2>
+          <a href="#features">
+            <button class="btn">Browse Books</button>
+          </a>
+        </div>
+        <figure class="header_img_wrapper">
+          <img src="./assets/Undraw_Book.svg" alt="" />
+        </figure>
+      </div>
+    </header>
+  </section>
+  <img class="wave" src="./assets/waveup.svg" alt="wave" />
+  <main>
+    <section id="highlights">
+      <div class="container">
+        <div class="row">
+          <h2 class="section_title">
+            Why choose <span class="purple">Sankathana</span>
+          </h2>
+          <div class="highlight_wrapper">
+            <div class="highlight">
+              <div class="highlight_img">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3 class="highlight_subtitle">Easy and Quick</h3>
+              <p class="highlight_para">
+                Get access to the book you purchased online instantly
+              </p>
+            </div>
+            <div class="highlight">
+              <div class="highlight_img">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <h3 class="highlight_subtitle">1000+ Books</h3>
+              <p class="highlight_para">
+                Sankathana has books in all your favorites categaries.
+              </p>
+            </div>
+            <div class="highlight">
+              <div class="highlight_img">
+                <i class="fas fa-tags"></i>
+              </div>
+              <h3 class="highlight_subtitle">Afffordable</h3>
+              <p class="highlight_para">
+                Get your hands on popular books for a lowest price
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <img class="wave" src="./assets/wavedown.svg" alt="wave" />
+
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <h2>Features <span class="purple">Books</span></h2>
+          <div class="books">
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book2.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book3.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book4.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book5.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="recent">
+      <div class="container">
+        <div class="row">
+          <h2>Latest <span class="purple">Books</span></h2>
+          <div class="books">
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book2.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book3.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book4.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book5.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book2.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book3.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book4.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book_img_wrapper">
+                <img class="book_img" src="./assets/book5.jpg" alt="" />
+              </figure>
+              <div class="book_title">Book title</div>
+              <div class="book_ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book_price">
+                <span class="book_price_normal">Rs.500</span>Rs. 400
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Explore">
+      <div class="container">
+        <div class="row row_column">
+          <h2>Explore more <span class="purple">Books</span></h2>
+          <a href="#features">
+            <button class="btn">Browse Books</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="row row_column">
+      <a href="#">
+        <figure class="footer_logo">
+          <img src="./assets/footerlogo.jpg" class="footer_logo_img" alt="" />
+        </figure>
+      </a>
+      <div class="footer_list">
+        <a href="" class="footer_link">Home</a>
+        <a href="" class="footer_link no-Cursor">About</a>
+        <a href="" class="footer_link">Books</a>
+        <a href="" class="footer_link no-Cursor">Contact</a>
+      </div>
+      <div class="footer_copyright">Copyright &copy; 2022 Library</div>
+    </div>
+  </footer>
+</body>
+
 </html>
